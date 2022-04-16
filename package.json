@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  },
+  "name": "5.-bankist-website",
+  "version": "1.0.0",
+  "description": "Bankist Website",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "",
+  "license": "ISC"
+}
