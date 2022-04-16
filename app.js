@@ -19,7 +19,7 @@ const closeModal = function () {
   overlay.classList.add("hidden");
 };
 
-btnsOpenModal.forEach(curr => curr.addEventListener("click", openModal));
+btnsOpenModal.forEach((curr) => curr.addEventListener("click", openModal));
 
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
@@ -97,7 +97,7 @@ const handleHover = function (e) {
     const siblings = link.closest(".nav").querySelectorAll(".nav__link");
     const logo = link.closest(".nav").querySelector("img");
 
-    siblings.forEach(el => {
+    siblings.forEach((el) => {
       if (el !== link) el.style.opacity = this;
     });
     logo.style.opacity = this;
@@ -117,8 +117,8 @@ tabsContainer.addEventListener("click", function (e) {
   // Guard Clause
   if (!clicked) return;
 
-  tabs.forEach(el => el.classList.remove("operations__tab--active"));
-  tabsContent.forEach(c => c.classList.remove("operations__content--active"));
+  tabs.forEach((el) => el.classList.remove("operations__tab--active"));
+  tabsContent.forEach((c) => c.classList.remove("operations__content--active"));
 
   // Activate Tab
 
@@ -214,7 +214,7 @@ const imgLoad = function (entries, observer) {
 const imageObserver = new IntersectionObserver(imgLoad, {
   root: null,
   threshold: 0,
-  // rootMargin: "200px", // to not let users know that we are lazy-loading
+  rootMargin: "200px", // to not let users know that we are lazy-loading
 });
 
 imgTargets.forEach(function (img) {
@@ -249,7 +249,7 @@ imgTargets.forEach(function (img) {
   const activateDots = function (slide) {
     document
       .querySelectorAll(".dots__dot")
-      .forEach(el => el.classList.remove("dots__dot--active"));
+      .forEach((el) => el.classList.remove("dots__dot--active"));
     document
       .querySelector(`[data-slide="${slide}"]`)
       .classList.add("dots__dot--active");
