@@ -19,7 +19,7 @@ const closeModal = function () {
   overlay.classList.add("hidden");
 };
 
-btnsOpenModal.forEach((curr) => curr.addEventListener("click", openModal));
+btnsOpenModal.forEach(curr => curr.addEventListener("click", openModal));
 
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
@@ -38,6 +38,23 @@ const nav = document.querySelector(".nav");
 const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
 const tabsContent = document.querySelectorAll(".operations__content");
+const hamburger = document.querySelector(".menuToggle");
+const navLink = document.querySelector(".nav__links");
+const navItems = document.querySelectorAll(".nav__item");
+
+// Hamburger Menu
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("open");
+  navLink.classList.toggle("openNav");
+});
+
+for (let i = 0; i < navItems.length; i++) {
+  navItems[i].addEventListener("click", () => {
+    hamburger.classList.remove("open");
+    navLink.classList.remove("openNav");
+  });
+}
 
 // Button scrolling
 btnScrollTo.addEventListener("click", function (e) {
@@ -97,7 +114,7 @@ const handleHover = function (e) {
     const siblings = link.closest(".nav").querySelectorAll(".nav__link");
     const logo = link.closest(".nav").querySelector("img");
 
-    siblings.forEach((el) => {
+    siblings.forEach(el => {
       if (el !== link) el.style.opacity = this;
     });
     logo.style.opacity = this;
@@ -117,8 +134,8 @@ tabsContainer.addEventListener("click", function (e) {
   // Guard Clause
   if (!clicked) return;
 
-  tabs.forEach((el) => el.classList.remove("operations__tab--active"));
-  tabsContent.forEach((c) => c.classList.remove("operations__content--active"));
+  tabs.forEach(el => el.classList.remove("operations__tab--active"));
+  tabsContent.forEach(c => c.classList.remove("operations__content--active"));
 
   // Activate Tab
 
@@ -249,7 +266,7 @@ imgTargets.forEach(function (img) {
   const activateDots = function (slide) {
     document
       .querySelectorAll(".dots__dot")
-      .forEach((el) => el.classList.remove("dots__dot--active"));
+      .forEach(el => el.classList.remove("dots__dot--active"));
     document
       .querySelector(`[data-slide="${slide}"]`)
       .classList.add("dots__dot--active");
