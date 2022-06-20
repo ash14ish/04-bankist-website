@@ -1144,7 +1144,7 @@ h4 {
 
   .modal {
     width: 80vw;
-    height: 60%;
+    /* height: 60%; */
     top: 40%;
     padding: 1rem;
     border-radius: 10px;
@@ -1160,32 +1160,29 @@ h4 {
 
   .modal__form {
     margin: auto;
-    height: 80%;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 3.8rem);
-    align-content: center;
-    gap: 0;
+    display: block;
   }
 
   .modal__form label {
+    display: block;
     font-size: 1.5rem;
-    margin-left: 1.2rem;
+    margin: 2rem auto auto 3rem;
   }
 
   .modal__form input {
+    display: block;
     font-size: 1.7rem;
     padding: 0.4rem 0.7rem;
     border: 1.3px solid #ddd;
     border-radius: 0.7rem;
-    width: 62vw;
+    width: 56vw;
     margin: auto;
     box-shadow: 0.2rem 0.4rem 6px gray;
   }
 
   .modal__form button {
-    align-self: center;
-    margin-top: 2.8rem;
+    margin: 2rem auto 1rem auto;
+    display: block;
     padding: 0.4rem 2rem;
     grid-row-start: 7;
   }
