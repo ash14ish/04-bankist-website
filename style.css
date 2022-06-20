@@ -1080,8 +1080,6 @@ h4 {
     column-gap: 0rem;
   }
 
-  /* section3 */
-
   .section__title--testimonials {
     margin-bottom: 2rem;
   }
@@ -1166,7 +1164,7 @@ h4 {
     grid-auto-flow: column;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 3.8rem);
-    align-content: start;
+    align-content: center;
     gap: 0;
   }
 
