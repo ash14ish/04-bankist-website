@@ -1142,8 +1142,9 @@ h4 {
   }
 
   .modal {
-    width: 75vw;
-    height: 70vh;
+    width: 77vw;
+    height: 60vh;
+    top: 40%;
     padding: 1rem;
     border-radius: 10px;
   }
