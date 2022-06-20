@@ -656,8 +656,6 @@ h4 {
   grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 2.5rem;
-  overflow-y: scroll;
-  overflow-x: none;
 }
 
 .modal__form label {
@@ -1212,7 +1210,6 @@ h4 {
   h4 {
     font-size: 1.4rem;
     font-weight: 700;
-    width: max-content;
   }
 }
 
@@ -1251,6 +1248,11 @@ h4 {
 }
 
 @media (max-width: 380px) {
+  .header__title {
+    padding: 0 1.5rem;
+    width: 90vw;
+  }
+
   .operations__content {
     font-size: 1rem;
   }
