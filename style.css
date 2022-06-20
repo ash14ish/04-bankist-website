@@ -1182,7 +1182,11 @@ h4 {
     margin: 2rem auto 1rem auto;
     display: block;
     padding: 0.4rem 2rem;
-    grid-row-start: 7;
+    font-size: 1.2rem;
+  }
+
+  .footer__logo {
+    height: 4rem;
   }
 }
 
@@ -1249,15 +1253,104 @@ h4 {
 
 @media (max-width: 380px) {
   .header__title {
-    padding: 0 1.5rem;
-    width: 90vw;
+    padding: 0 0.8rem;
   }
-
-  /* .header__img {
-    width: 60vw;
-  } */
 
   .operations__content {
     font-size: 1rem;
+  }
+
+  /* .modal__form {
+    overflow-y: scroll;
+    overflow-x: none;
+  } */
+}
+
+@media (max-width: 340px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .header__img {
+    width: 70%;
+    margin: auto;
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.25rem 1.5rem;
+  }
+
+  .testimonial__text {
+    font-size: 1.15rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .testimonial__author {
+    margin-left: 2rem;
+    grid-template-columns: 5.5rem 1fr;
+    column-gap: 0;
+  }
+
+  .testimonial__photo {
+    width: 3.5rem;
+  }
+
+  .testimonial__name {
+    font-size: 1.18rem;
+  }
+
+  .testimonial__location {
+    font-size: 1.1rem;
+  }
+
+  .section__header {
+    font-size: 1.6rem;
+  }
+
+  .section--sign-up .btn {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .footer__logo {
+    height: 3rem;
+  }
+
+  .nav__links {
+    width: 60vw;
+  }
+
+  .nav__link:link {
+    font-size: 1.1rem;
+  }
+
+  .modal {
+    width: 85vw;
+    padding: 0.5rem;
+  }
+
+  .modal__header {
+    font-size: 1.4rem;
+  }
+
+  .btn--close-modal {
+    right: 1.5rem;
+    font-size: 3rem;
+    margin-left: 0.2rem;
+  }
+
+  .modal__form label {
+    font-size: 1.3rem;
+  }
+
+  .modal__form input {
+    font-size: 1.4rem;
+    width: 56vw;
   }
 }
