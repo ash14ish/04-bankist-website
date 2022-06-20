@@ -1144,6 +1144,9 @@ h4 {
   .modal {
     width: 77vw;
     height: 60vh;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: none;
     top: 40%;
     padding: 1rem;
     border-radius: 10px;
