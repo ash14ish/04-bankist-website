@@ -1029,47 +1029,6 @@ h4 {
   .header {
     padding: 0;
   }
-
-  /* form */
-
-  .modal {
-    width: 90vw;
-    height: 70vh;
-    padding: 2.7rem;
-    border-radius: 10px;
-  }
-
-  .modal__header {
-    font-size: 1.8rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.5;
-  }
-
-  .modal__form {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    gap: 0;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-
-  .modal__form input {
-    font-size: 1.7rem;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 0.5rem;
-    width: 75vw;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    box-shadow: 0.2rem 0.4rem 6px gray;
-  }
-
-  .modal__form button {
-    align-self: center;
-    font-size: 1.4rem;
-    padding: 0.4rem 2rem;
-  }
 }
 
 @media (max-width: 550px) {
@@ -1182,10 +1141,43 @@ h4 {
     font-size: 1rem;
   }
 
+  .modal {
+    width: 75vw;
+    height: 70vh;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .modal__header {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+  }
+
   .modal__form {
-    overflow-x: none;
-    overflow-y: scroll;
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .modal__form input {
+    font-size: 1.7rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    width: 75vw;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0.2rem 0.4rem 6px gray;
+  }
+
+  .modal__form button {
+    align-self: center;
+    font-size: 1.4rem;
+    padding: 0.4rem 2rem;
   }
 }
 
