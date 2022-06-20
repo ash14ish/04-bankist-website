@@ -1160,18 +1160,11 @@ h4 {
   }
 
   .modal__form {
-    /* display: flex;
-    flex-direction: column;
-    margin: 0;
+    margin: auto;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 3.4rem) [rs] 3rem;
     gap: 0;
-    align-items: flex-start;
-    justify-content: space-between; */
-    margin: 0 3rem;
-    display: block;
-    /* grid-template-columns: 2rem;
-    grid-template-rows: repeat(7, 1fr); */
-    /* align-items: center;
-    gap: 2.5rem; */
   }
 
   .modal__form label {
@@ -1185,17 +1178,16 @@ h4 {
     padding: 0.4rem 0.7rem;
     border: 1.5px solid #ddd;
     border-radius: 0.7rem;
-    width: 65vw;
+    width: 62vw;
     margin: auto;
     box-shadow: 0.2rem 0.4rem 6px gray;
   }
 
   .modal__form button {
     align-self: center;
-    font-size: 1.4rem;
     margin-top: 2rem;
-
     padding: 0.4rem 2rem;
+    grid-row-start: 7;
   }
 }
 
