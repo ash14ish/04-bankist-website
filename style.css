@@ -1144,8 +1144,6 @@ h4 {
 
   .modal {
     width: 80vw;
-    /* height: 60%; */
-    top: 40%;
     padding: 1rem;
     border-radius: 10px;
     margin: auto;
