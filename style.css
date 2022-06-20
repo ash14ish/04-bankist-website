@@ -1150,8 +1150,7 @@ h4 {
     top: 40%;
     padding: 1rem;
     border-radius: 10px;
-    margin-bottom: 0;
-    padding-bottom: 0.3rem;
+    margin: auto;
   }
 
   .modal__header {
