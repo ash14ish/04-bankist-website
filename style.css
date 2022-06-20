@@ -1161,6 +1161,7 @@ h4 {
 
   .modal__form {
     margin: auto;
+    overflow-y: scroll;
     grid-auto-flow: column;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 3.4rem) [rs] 3rem;
