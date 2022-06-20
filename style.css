@@ -1160,12 +1160,18 @@ h4 {
   }
 
   .modal__form {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     margin: 0;
     gap: 0;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-between; */
+    margin: 0 3rem;
+    display: block;
+    /* grid-template-columns: 2rem;
+    grid-template-rows: repeat(7, 1fr); */
+    /* align-items: center;
+    gap: 2.5rem; */
   }
 
   .modal__form label {
