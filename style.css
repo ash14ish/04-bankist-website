@@ -34,6 +34,24 @@ body {
   background-color: #f3f3f3;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(30, 30, 30);
+}
+
 /* GENERAL ELEMENTS */
 .section {
   padding: 15rem 3rem;
@@ -1032,24 +1050,6 @@ h4 {
 }
 
 @media (max-width: 550px) {
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: grey;
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(30, 30, 30);
-  }
-
   .operations {
     margin: 10rem auto 0 auto;
   }
@@ -1147,7 +1147,7 @@ h4 {
     min-height: 40vh;
     overflow-y: scroll;
     overflow-x: none;
-    top: 20vh;
+    top: 40%;
     padding: 1rem;
     border-radius: 10px;
   }
