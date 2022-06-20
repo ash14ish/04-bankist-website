@@ -1153,9 +1153,9 @@ h4 {
   }
 
   .modal__header {
-    font-size: 1.8rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.5;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
   }
 
   .modal__form {
@@ -1167,20 +1167,26 @@ h4 {
     justify-content: space-between;
   }
 
+  .modal__form label {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
   .modal__form input {
     font-size: 1.7rem;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 0.5rem;
-    width: 75vw;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    padding: 0.4rem 0.7rem;
+    border: 1.5px solid #ddd;
+    border-radius: 0.7rem;
+    width: 65vw;
+    margin: auto;
     box-shadow: 0.2rem 0.4rem 6px gray;
   }
 
   .modal__form button {
     align-self: center;
     font-size: 1.4rem;
+    margin-top: 2rem;
     padding: 0.4rem 2rem;
   }
 }
