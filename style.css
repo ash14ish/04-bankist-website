@@ -1146,7 +1146,7 @@ h4 {
 
   .modal {
     width: 80vw;
-    height: 70%;
+    height: 60%;
     top: 40%;
     padding: 1rem;
     border-radius: 10px;
@@ -1154,24 +1154,25 @@ h4 {
   }
 
   .modal__header {
+    padding: 1rem;
     font-size: 1.7rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     line-height: 1.4;
   }
 
   .modal__form {
     margin: auto;
-    overflow-y: scroll;
+    height: 80%;
     grid-auto-flow: column;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 3.4rem) [rs] 3rem;
+    grid-template-rows: repeat(7, 3.8rem);
+    align-content: start;
     gap: 0;
   }
 
   .modal__form label {
     font-size: 1.5rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin-left: 1.2rem;
   }
 
   .modal__form input {
@@ -1186,7 +1187,7 @@ h4 {
 
   .modal__form button {
     align-self: center;
-    margin-top: 2rem;
+    margin-top: 2.8rem;
     padding: 0.4rem 2rem;
     grid-row-start: 7;
   }
