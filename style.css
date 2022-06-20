@@ -709,7 +709,7 @@ h4 {
   background-color: var(--color-primary-darker);
 }
 
-@media only screen and (max-width: 950px) {
+@media (max-width: 950px) {
   .menuToggle {
     display: block;
   }
@@ -1185,6 +1185,7 @@ h4 {
   .modal__form {
     overflow-x: none;
     overflow-y: scroll;
+    height: 50vh;
   }
 }
 
